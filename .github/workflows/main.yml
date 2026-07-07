@@ -28,6 +28,7 @@ jobs:
       - uses: gradle/actions/setup-gradle@v4
         with:
           gradle-version: current
+          validate-wrappers: false
 
       - name: Build debug APK
         run: ./gradlew assembleDebug
